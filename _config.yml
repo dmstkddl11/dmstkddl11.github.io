@@ -1,0 +1,17 @@
+title: "Obin - Portfolio"
+description: "Personal photography portfolio and blog"
+url: "https://dmstkddl11.github.io"
+
+# GitHub Pages settings
+plugins:
+  - jekyll-feed
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+
+# Exclude files from build
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
