@@ -257,7 +257,7 @@ footer p {
 .about-page::before {
     content: '';
     position: fixed;
-    top: 0;
+    top: 30vh;
     height: 100vh;
     background-image: url('images/b3.png');
     background-size: 25vw 25vw;
