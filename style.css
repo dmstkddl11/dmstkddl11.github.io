@@ -237,13 +237,13 @@ footer p {
     content: '';
     position: fixed;
     top: 0;
-    left: 20%;
-    right: 20%;
     height: 100vh;
     background-image: url('images/b3.png');
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
+    background-size: 25vw 25vw;
+    background-repeat: repeat;
+    left: 0;
+    right: 0;
+    width: 100%;
     opacity: 0.5;
     z-index: -1;
     pointer-events: none;
@@ -270,11 +270,7 @@ footer p {
     }
 
     .about-page::before {
-        width: 80%;
-        left: 10%;
-        right: 10%;
-        opacity: 0.5;
-        background-size: cover;
+        background-size: 35vw 35vw;
     }
     
     main {
