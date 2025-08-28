@@ -228,6 +228,27 @@ footer p {
     color: #666;
 }
 
+/* Blog page background image */
+.blog-page {
+    position: relative;
+}
+
+.blog-page::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    height: 100vh;
+    background-image: url('images/b2.png');
+    background-size: 50vw 50vw;
+    background-repeat: repeat;
+    left: 0;
+    right: 0;
+    width: 100%;
+    opacity: 0.7;
+    z-index: -1;
+    pointer-events: none;
+}
+
 /* About page background image */
 .about-page {
     position: relative;
