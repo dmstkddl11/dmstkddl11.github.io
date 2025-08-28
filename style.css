@@ -236,7 +236,7 @@ footer p {
 .blog-page::before {
     content: '';
     position: fixed;
-    top: 20vh;
+    top: 12vh;
     height: 100vh;
     background-image: url('images/b2.png');
     background-size: 50vw 50vw;
