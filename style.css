@@ -15,11 +15,12 @@ body {
 /* Navigation headers and titles use Rubik Gemstones */
 nav h1,
 nav h1 a,
+nav ul li a,
 .content-container h2,
 .about-text h3,
 .blog-post h3,
 .blog-post h3 a {
-    font-family: 'Rubik Gemstones', cursive;
+    font-family: 'Rubik Gemstones', system-ui;
 }
 
 /* Navigation */
