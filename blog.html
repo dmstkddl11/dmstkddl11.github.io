@@ -1,43 +1,18 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Writing</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Rubik+Gemstones&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-</head>
-<body class="blog-page">
-    <nav>
-        <div class="nav-container">
-            <h1><a href="index.html">Obin</a></h1>
-            <ul>
-                <li><a href="index.html">About</a></li>
-                <li><a href="flash.html">Flash</a></li>
-                <li><a href="gallery.html">Gallery</a></li>
-                <li><a href="blog.html" class="active">Writing</a></li>
-            </ul>
+---
+layout: default
+title: Writing
+nav_active: writing
+body_class: blog-page
+---
+<main>
+    <div class="content-container">
+        <h2>Writing</h2>
+        
+        <div class="blog-posts">
+            <article class="blog-post">
+                    <h3><a href="{{ '/blog/기침.html' | relative_url }}">기침</a></h3>
+                    <p class="post-date">August 28, 2025</p>
+            </article>
         </div>
-    </nav>
-
-    <main>
-        <div class="content-container">
-            <h2>Writing</h2>
-            
-            <div class="blog-posts">
-                <article class="blog-post">
-                        <h3><a href="blog/기침.html">기침</a></h3>
-                        <p class="post-date">August 28, 2025</p>
-                </article>
-            </div>
-        </div>
-    </main>
-
-    <footer>
-        <p>&copy; 2025 Obin Park</p>
-    </footer>
-</body>
-</html>
+    </div>
+</main>

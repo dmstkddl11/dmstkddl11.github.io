@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: 'en' }}">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page.title | default: site.title }} | {{ site.title }}</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Gemstones&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ '/style.css' | relative_url }}">
+</head>
+<body class="{{ page.body_class }}">
+    <nav>
+        <div class="nav-container">
+            <h1><a href="{{ '/' | relative_url }}">Obin</a></h1>
+            <ul>
+                <li><a href="{{ '/' | relative_url }}" {% if page.nav_active == 'about' %}class="active"{% endif %}>About</a></li>
+                <li><a href="{{ '/flash.html' | relative_url }}" {% if page.nav_active == 'flash' %}class="active"{% endif %}>Flash</a></li>
+                <li><a href="{{ '/gallery.html' | relative_url }}" {% if page.nav_active == 'gallery' %}class="active"{% endif %}>Gallery</a></li>
+                <li><a href="{{ '/blog.html' | relative_url }}" {% if page.nav_active == 'writing' %}class="active"{% endif %}>Writing</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    {{ content }}
+
+    <footer>
+        <p>&copy; 2025 Obin Park</p>
+    </footer>
+</body>
+</html>
