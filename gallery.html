@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Obin</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Gemstones&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <h1><a href="index.html">Obin</a></h1>
+            <ul>
+                <li><a href="index.html">About</a></li>
+                <li><a href="flash.html">Flash</a></li>
+                <li><a href="gallery.html" class="active">Gallery</a></li>
+                <li><a href="blog.html">Writing</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <div class="gallery">
+            <div class="photo-item">
+                <img src="images/1.jpeg" alt="Description of photo 1" class="clickable-image">
+            </div>
+            <div class="photo-item">
+                <img src="images/2.jpeg" alt="Description of photo 2" class="clickable-image">
+            </div>
+            <div class="photo-item">
+                <img src="images/3.jpeg" alt="Description of photo 3" class="clickable-image">
+            </div>
+            <div class="photo-item">
+                <img src="images/4.jpeg" alt="Description of photo 4" class="clickable-image">
+            </div>
+            <div class="photo-item">
+                <img src="images/5.jpeg" alt="Description of photo 5" class="clickable-image">
+            </div>
+            <div class="photo-item">
+                <img src="images/6.jpeg" alt="Description of photo 6" class="clickable-image">
+            </div>
+            <div class="photo-item">
+                <img src="images/7.jpeg" alt="Description of photo 7" class="clickable-image">
+            </div>
+            <div class="photo-item">
+                <img src="images/8.jpeg" alt="Description of photo 8" class="clickable-image">
+            </div>
+            <div class="photo-item">
+                <img src="images/9.jpeg" alt="Description of photo 9" class="clickable-image">
+            </div>
+            <div class="photo-item">
+                <img src="images/10.jpeg" alt="Description of photo 10" class="clickable-image">
+            </div>
+            <div class="photo-item">
+                <img src="images/11.jpeg" alt="Description of photo 11" class="clickable-image">
+            </div>
+            <div class="photo-item">
+                <img src="images/12.jpeg" alt="Description of photo 12" class="clickable-image">
+            </div>
+            <div class="photo-item">
+                <img src="images/13.jpeg" alt="Description of photo 13" class="clickable-image">
+            </div>
+            <div class="photo-item">
+                <img src="images/14.jpeg" alt="Description of photo 14" class="clickable-image">
+            </div>
+            <div class="photo-item">
+                <img src="images/15.jpeg" alt="Description of photo 15" class="clickable-image">
+            </div>
+            <div class="photo-item">
+                <img src="images/16.jpeg" alt="Description of photo 16" class="clickable-image">
+            </div>
+            <div class="photo-item">
+                <img src="images/17.jpeg" alt="Description of photo 17" class="clickable-image">
+            </div>
+            <div class="photo-item">
+                <img src="images/18.jpeg" alt="Description of photo 18" class="clickable-image">
+            </div>
+            <div class="photo-item">
+                <img src="images/19.jpeg" alt="Description of photo 19" class="clickable-image">
+            </div>
+            <div class="photo-item">
+                <img src="images/20.jpeg" alt="Description of photo 20" class="clickable-image">
+            </div>
+            <div class="photo-item">
+                <img src="images/21.jpeg" alt="Description of photo 21" class="clickable-image">
+            </div>
+            <div class="photo-item">
+                <img src="images/22.jpeg" alt="Description of photo 22" class="clickable-image">
+            </div>
+            <div class="photo-item">
+                <img src="images/23.jpeg" alt="Description of photo 23" class="clickable-image">
+            </div>
+            <div class="photo-item">
+                <img src="images/24.jpeg" alt="Description of photo 24" class="clickable-image">
+            </div>
+            <div class="photo-item">
+                <img src="images/25.jpeg" alt="Description of photo 25" class="clickable-image">
+            </div>
+            <div class="photo-item">
+                <img src="images/26.jpeg" alt="Description of photo 26" class="clickable-image">
+            </div>
+            <div class="photo-item">
+                <img src="images/27.jpeg" alt="Description of photo 27" class="clickable-image">
+            </div>
+            <div class="photo-item">
+                <img src="images/28.jpeg" alt="Description of photo 28" class="clickable-image">
+            </div>
+            <div class="photo-item">
+                <img src="images/29.jpeg" alt="Description of photo 29" class="clickable-image">
+            </div>
+            <div class="photo-item">
+                <img src="images/30.jpeg" alt="Description of photo 30" class="clickable-image">
+            </div>
+            <div class="photo-item">
+                <img src="images/31.jpeg" alt="Description of photo 31" class="clickable-image">
+            </div>
+            <div class="photo-item">
+                <img src="images/32.jpeg" alt="Description of photo 32" class="clickable-image">
+            </div>
+            <div class="photo-item">
+                <img src="images/33.jpeg" alt="Description of photo 33" class="clickable-image">
+            </div>
+        </div>
+    </main>
+
+    <!-- Modal for expanded image view -->
+    <div id="imageModal" class="image-modal">
+        <span class="modal-close">&times;</span>
+        <img class="modal-image" src="" alt="">
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Obin Park</p>
+    </footer>
+    
+    <script>
+        const modal = document.getElementById('imageModal');
+        const modalImage = document.querySelector('.modal-image');
+        const closeBtn = document.querySelector('.modal-close');
+        const clickableImages = document.querySelectorAll('.clickable-image');
+
+        // Open modal when image is clicked
+        clickableImages.forEach(img => {
+            img.addEventListener('click', function() {
+                modal.style.display = 'flex';
+                modalImage.src = this.src;
+                modalImage.alt = this.alt;
+                document.body.style.overflow = 'hidden';
+            });
+        });
+
+        // Close modal when X is clicked
+        closeBtn.addEventListener('click', function() {
+            modal.style.display = 'none';
+            document.body.style.overflow = 'auto';
+        });
+
+        // Close modal when clicking outside the image
+        modal.addEventListener('click', function(e) {
+            if (e.target === modal) {
+                modal.style.display = 'none';
+                document.body.style.overflow = 'auto';
+            }
+        });
+
+        // Close modal with Escape key
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape' && modal.style.display === 'flex') {
+                modal.style.display = 'none';
+                document.body.style.overflow = 'auto';
+            }
+        });
+    </script>
+</body>
+</html>
